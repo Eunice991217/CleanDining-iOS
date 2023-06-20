@@ -2,8 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,27 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWP-KE-Tqq">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOQ-U5-9mz">
+                                <rect key="frame" x="31.666666666666657" y="708" width="330" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dish" translatesAutoresizingMaskIntoConstraints="NO" id="Y0E-5f-xH6">
+                                        <rect key="frame" x="10" y="15" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8Nd-Ea-kV0"/>
+                                            <constraint firstAttribute="width" constant="60" id="yKr-5U-jiC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpo-Ig-17L">
+                                        <rect key="frame" x="80" y="10" width="240" height="70"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="CleanDiningBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Fpo-Ig-17L" secondAttribute="bottom" constant="10" id="CU9-di-9zz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fpo-Ig-17L" secondAttribute="trailing" constant="10" id="EIt-ju-G0I"/>
+                                    <constraint firstItem="Fpo-Ig-17L" firstAttribute="top" secondItem="oOQ-U5-9mz" secondAttribute="top" constant="10" id="FwY-tk-GNP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y0E-5f-xH6" secondAttribute="bottom" constant="15" id="Lbt-H8-r9O"/>
+                                    <constraint firstItem="Y0E-5f-xH6" firstAttribute="top" secondItem="oOQ-U5-9mz" secondAttribute="top" constant="15" id="RW2-cL-Eyu"/>
+                                    <constraint firstItem="Y0E-5f-xH6" firstAttribute="leading" secondItem="oOQ-U5-9mz" secondAttribute="leading" constant="10" id="gWP-cN-vWG"/>
+                                    <constraint firstAttribute="width" constant="330" id="mGi-fm-qz0"/>
+                                    <constraint firstAttribute="height" constant="90" id="o5V-dj-fjC"/>
+                                    <constraint firstItem="Fpo-Ig-17L" firstAttribute="leading" secondItem="Y0E-5f-xH6" secondAttribute="trailing" constant="10" id="xOg-me-rn7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VWP-KE-Tqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M30-pf-8Jx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VWP-KE-Tqq" secondAttribute="trailing" id="X8W-14-zBN"/>
-                            <constraint firstItem="VWP-KE-Tqq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fL1-s0-uXv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VWP-KE-Tqq" secondAttribute="bottom" id="vWc-wz-yOa"/>
+                            <constraint firstItem="oOQ-U5-9mz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y5j-Es-fKL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oOQ-U5-9mz" secondAttribute="bottom" constant="20" id="f9q-ov-jgq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressText" destination="Fpo-Ig-17L" id="A9q-y3-KfA"/>
+                        <outlet property="addressView" destination="oOQ-U5-9mz" id="Hb1-zH-FYz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="dish" width="512" height="512"/>
+        <namedColor name="CleanDiningBackground">
+            <color red="0.79607843137254897" green="0.92156862745098034" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

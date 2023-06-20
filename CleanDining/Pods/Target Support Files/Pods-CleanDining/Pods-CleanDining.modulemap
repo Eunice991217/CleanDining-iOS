@@ -1,0 +1,6 @@
+framework module Pods_CleanDining {
+  umbrella header "Pods-CleanDining-umbrella.h"
+
+  export *
+  module * { export * }
+}

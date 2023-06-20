@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35E49FDDEBB518C92D6B2188 /* Pods_CleanDining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E50B358ACD1CCA98FCC23B /* Pods_CleanDining.framework */; };
 		48B6C26E2A40BF9500F4279F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6C26D2A40BF9500F4279F /* AppDelegate.swift */; };
 		48B6C2702A40BF9500F4279F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6C26F2A40BF9500F4279F /* SceneDelegate.swift */; };
 		48B6C2722A40BF9500F4279F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6C2712A40BF9500F4279F /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14E50B358ACD1CCA98FCC23B /* Pods_CleanDining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanDining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5D5D11B049272F4A03CA30 /* Pods-CleanDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanDining.debug.xcconfig"; path = "Target Support Files/Pods-CleanDining/Pods-CleanDining.debug.xcconfig"; sourceTree = "<group>"; };
 		48B6C26A2A40BF9500F4279F /* CleanDining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanDining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B6C26D2A40BF9500F4279F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B6C26F2A40BF9500F4279F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		48B6C2792A40BF9600F4279F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B6C27C2A40BF9600F4279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B6C27E2A40BF9600F4279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40304E3F2DA5D45BAD65E77 /* Pods-CleanDining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanDining.release.xcconfig"; path = "Target Support Files/Pods-CleanDining/Pods-CleanDining.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E49FDDEBB518C92D6B2188 /* Pods_CleanDining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				48B6C26C2A40BF9500F4279F /* CleanDining */,
 				48B6C26B2A40BF9500F4279F /* Products */,
+				92BD68BB815F55E651DFAEDB /* Pods */,
+				A3B6AF5DF6A6F6967C590114 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = CleanDining;
 			sourceTree = "<group>";
 		};
+		92BD68BB815F55E651DFAEDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B5D5D11B049272F4A03CA30 /* Pods-CleanDining.debug.xcconfig */,
+				F40304E3F2DA5D45BAD65E77 /* Pods-CleanDining.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3B6AF5DF6A6F6967C590114 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E50B358ACD1CCA98FCC23B /* Pods_CleanDining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48B6C2812A40BF9600F4279F /* Build configuration list for PBXNativeTarget "CleanDining" */;
 			buildPhases = (
+				B8987FB5939C6B14A0033369 /* [CP] Check Pods Manifest.lock */,
 				48B6C2662A40BF9500F4279F /* Sources */,
 				48B6C2672A40BF9500F4279F /* Frameworks */,
 				48B6C2682A40BF9500F4279F /* Resources */,
+				06DF293F19043A9C561D0E64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06DF293F19043A9C561D0E64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanDining/Pods-CleanDining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanDining/Pods-CleanDining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanDining/Pods-CleanDining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8987FB5939C6B14A0033369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanDining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48B6C2662A40BF9500F4279F /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		48B6C2822A40BF9600F4279F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5D5D11B049272F4A03CA30 /* Pods-CleanDining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +369,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +385,7 @@
 		};
 		48B6C2832A40BF9600F4279F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40304E3F2DA5D45BAD65E77 /* Pods-CleanDining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +399,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

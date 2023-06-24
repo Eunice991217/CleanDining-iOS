@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "free-icon-hamburger-3075977.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "free-icon-map-marker-5737612.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

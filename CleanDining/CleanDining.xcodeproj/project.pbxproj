@@ -15,6 +15,7 @@
 		48B6C2782A40BF9500F4279F /* CleanDining.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48B6C2762A40BF9500F4279F /* CleanDining.xcdatamodeld */; };
 		48B6C27A2A40BF9600F4279F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B6C2792A40BF9600F4279F /* Assets.xcassets */; };
 		48B6C27D2A40BF9600F4279F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B6C27B2A40BF9600F4279F /* LaunchScreen.storyboard */; };
+		48C2F4052A44B2500033F74D /* ServerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2F4042A44B2500033F74D /* ServerDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		48B6C2792A40BF9600F4279F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B6C27C2A40BF9600F4279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B6C27E2A40BF9600F4279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C2F4042A44B2500033F74D /* ServerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataModel.swift; sourceTree = "<group>"; };
 		F40304E3F2DA5D45BAD65E77 /* Pods-CleanDining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanDining.release.xcconfig"; path = "Target Support Files/Pods-CleanDining/Pods-CleanDining.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				48B6C27B2A40BF9600F4279F /* LaunchScreen.storyboard */,
 				48B6C27E2A40BF9600F4279F /* Info.plist */,
 				48B6C2762A40BF9500F4279F /* CleanDining.xcdatamodeld */,
+				48C2F4042A44B2500033F74D /* ServerDataModel.swift */,
 			);
 			path = CleanDining;
 			sourceTree = "<group>";
@@ -83,7 +86,6 @@
 				3B5D5D11B049272F4A03CA30 /* Pods-CleanDining.debug.xcconfig */,
 				F40304E3F2DA5D45BAD65E77 /* Pods-CleanDining.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C2F4052A44B2500033F74D /* ServerDataModel.swift in Sources */,
 				48B6C2782A40BF9500F4279F /* CleanDining.xcdatamodeld in Sources */,
 				48B6C2722A40BF9500F4279F /* ViewController.swift in Sources */,
 				48B6C26E2A40BF9500F4279F /* AppDelegate.swift in Sources */,
